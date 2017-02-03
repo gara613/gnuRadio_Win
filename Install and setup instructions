@@ -14,9 +14,10 @@ With the bundle installer you should not need the installation of single package
 distribution such as Anaconda you can install any package you want to experiment with yourself.
 
 # 4. Configure PATH 
-If you intend to only run GNUradio companion you are ready to go! (Not completely true, GRC at this step is only useful as a simulator,
-when you want to use external input and oputput devices you should configure them properly).
-Instead if you want to create, modify, test, and do the fun stuff with blocks and code, you need to configure GNURadio to run from Python scripts
+If you intend to only run GNUradio companion you are ready to go! (Not completely true, GRC at this step is only useful as a 
+simulator, when you want to use external input and oputput devices you should configure them properly).
+Instead if you want to create, modify, test, and do the fun stuff with blocks and code, you need to configure GNURadio to run
+from Python scripts
 
 This part is almost copied textually from Zac's tutorial:
 The last thing you have to do is add GNURadio's libraries to your system PATH and PYTHONPATH. 
@@ -26,16 +27,21 @@ Under "System variables", click "New" and add a variable called "PYTHONPATH" wit
 Also in the PATH variable add the value: 
 'C:\Program Files\GNURadio-3.7\bin'
 Also, create the variable: 'GRC_BLOCKS_PATH', with the value: 'C:\Program Files\GNURadio-3.7\share\gnuradio\grc\blocks'
-If you, as in my case, use Anacona for other things, probably will see that there is a User Variable called PATH, with the Anaconda related values, left this untouched as this would not affect the gnuRadio functionality, unless you know what you are doing.
+If you, as in my case, use Anacona for other things, probably will see that there is a User Variable called PATH, with the
+Anaconda related values, left this untouched as this would not affect the gnuRadio functionality, unless you know what you 
+are doing.
 
 # 5. Executing GNURadio from the command line
 Now, you are ready to begin. Assuming you read the tutorial: 
 http://gnuradio.org/redmine/projects/gnuradio/wiki/Guided_Tutorial_GNU_Radio_in_Python 
-and create the file 'if_else.py', you want to run it, there are two options: 1. from the gnuradio command prompt installed with gnuradio (easier), 2. from the windows command line (lengthier).
+and create the file 'if_else.py', you want to run it, there are two options: 1. from the gnuradio command prompt installed with 
+gnuradio (easier), 2. from the windows command line (lengthier).
 
-The first thing after you open the command prompt is to open a Python command prompt, just type 'python' and the python executable willl be invoked.
-If you did from the gnuRadio command prompt there should be no problem invoking the correct version of python, from the windows command line 
-just be sure of the python path before executing the command. Just to be sure use: 
+The first thing after you open the command prompt is to open a Python command prompt, just type 'python' and the python 
+executable willl be invoked.
+If you did from the gnuRadio command prompt there should be no problem invoking the correct version of python, from the windows
+command line just be sure of the python path before executing the command. Just to be sure use: 
+
 '''
 import sys
 sys.executable
@@ -44,7 +50,6 @@ import os
 os.chdir("MypreferredWorkingFolder")
 cwd=os.getcwd()
 listdir(cwd)
-
-% After veifying your files are in place just have fun!
+#After veifying your files are in place just have fun!
 execfile("MyFile.py")
 '''
