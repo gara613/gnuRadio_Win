@@ -54,5 +54,8 @@ listdir(cwd)
 execfile("MyFile.py")
 '''
 
-6. Modify the file ExternalEditor.py using the solution posted by https://github.com/skoslowski in:
+# 6. Modify the file ExternalEditor.py using the solution posted by https://github.com/skoslowski in:
 https://github.com/skoslowski/gnuradio/commit/0002525abeff6f80e7deb35849f2fc47ce9982a4
+
+# 7. If you intend to use RTL-SDR dongles, then reinstall the drivers according to the instructions in: 
+http://www.rtl-sdr.com/tag/zadig/
