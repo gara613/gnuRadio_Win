@@ -49,7 +49,7 @@ after that, change the python current working directory to your preferred locati
 import os
 os.chdir("MypreferredWorkingFolder")
 cwd=os.getcwd()
-listdir(cwd)
+os.listdir(cwd)
 #After veifying your files are in place just have fun!
 execfile("MyFile.py")
 '''
